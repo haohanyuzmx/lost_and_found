@@ -14,6 +14,7 @@
 
 ##### 项目架构
 
+```
 │  go.mod
 │  go.sum
 │  main
@@ -48,6 +49,8 @@
 │      notice_for_lost.go
 │      user.go
 │
+├─readme_picture
+│
 ├─service
 │      file.go
 │      post_test.go
@@ -57,6 +60,9 @@
 └─util
         jwt.go
         ptr.go
+
+```
+
 
 mvc架构的一种变种，util相当于工具包，是自己写的一些小玩意，model属于持久化，service是对model的封装，使得架构更加清晰和降低耦合度，internal是我的处理逻辑，api就是我所开放的接口，assets是图像区域，也就是我自己做的图床，用的加载静态资源文件做的服务器文件。cmd是程序入口，main是编译出来的linux二进制可执行文件
 
